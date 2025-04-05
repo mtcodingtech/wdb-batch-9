@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Descendant  */
+      /* div p {
+        background-color: rgb(79, 236, 35);
+      } */
+
+      /* Child */
+      /* div > p {
+        background-color: rgb(79, 236, 35);
+      } */
+
+      /* Next sibling */
+      /* div + p {
+        background-color: rgb(79, 236, 35);
+      } */
+
+      /* Subsequent-sibling */
+      div ~ p {
+        background-color: rgb(79, 236, 35);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Para 1</p>
+      <p>Para 2</p>
+      <span>
+        <p>P1</p>
+      </span>
+    </div>
+    <p>Outside P1</p>
+    <p>Outside P2</p>
+    <h2>H2</h2>
+  </body>
+</html>
