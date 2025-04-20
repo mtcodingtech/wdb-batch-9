@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .card {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        text-align: center;
+        margin: 50px auto;
+        position: relative;
+        top: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card img {
+        width: inherit;
+        height: inherit;
+      }
+      .card .content {
+        background-color: rgba(235, 13, 13, 0.696);
+        padding: 12px;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        /* right: 0; */
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .para {
+        background-color: rgb(228, 141, 19);
+        height: 1200px;
+      }
+      button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+      }
+      .heading2 {
+        background-color: hotpink;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card1">
+      <img
+        src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="img"
+      />
+      <div class="content">
+        <h3>Hello Heading 3</h3>
+        <p>This is p</p>
+      </div>
+    </div>
+    <h2 class="heading2">Heading 2</h2>
+    <p class="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+      aspernatur, ex aliquid quaerat placeat veniam voluptatibus perferendis
+      laudantium. Quo illo quaerat porro temporibus dolor libero ullam
+      consequatur repellat, ipsum vero.
+    </p>
+    <a href="#card1"><button>Go to top</button></a>
+  </body>
+</html>
