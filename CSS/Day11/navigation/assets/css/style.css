@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  padding: 1.5rem 0;
+}
+nav .nav-link-container ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+nav .nav-link-container ul li a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
