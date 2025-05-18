@@ -7,6 +7,7 @@ $Blue: hsl(212, 86%, 64%);
 $Grey-500: hsl(234, 12%, 34%);
 $Grey-400: hsl(212, 6%, 44%);
 $White: hsl(0, 0%, 100%);
+$Responsive-Width: 992px;
 
 * {
   padding: 0;
@@ -28,11 +29,19 @@ section {
   // justify-content: center;
   // align-items: center;
   .container {
-    width: 960px;
+    width: 100%;
+    padding: 3rem 1rem;
+    @media (min-width: $Responsive-Width) {
+       width: 850px;
+       padding: 0;
+    }
     .intro-container {
-      max-width: 500px;
+      max-width: 100%;
       margin: auto;
       text-align: center;
+      @media (min-width: $Responsive-Width) {
+        max-width: 400px;
+      }
       h2,
       h3 {
         font-size: 1.5rem;
@@ -42,20 +51,64 @@ section {
       }
       h2 {
         font-weight: 600;
+        color: $Grey-500;
       }
       p {
+        font-size: 13px;
+        margin: 0.8rem 0;
       }
     }
     .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+      justify-content: center;
+      margin: 2rem 0;
+
       .card {
+        flex-basis: 100%;
+        border-top: 3px solid transparent;
+        box-shadow: 0 4px 8px #a29e9e;
+        border-radius: 5px;
+        padding: 1rem;
+        @media (min-width: $Responsive-Width) {
+          flex-basis: 30%;
+          &:nth-child(1),
+          &:nth-child(4) {
+            transform: translateY(50%);
+          }
+        }
+
+        &:nth-child(1) {
+          border-top-color: $Cyan;
+        }
+        &:nth-child(2) {
+          border-top-color: $Red;
+        }
+        &:nth-child(3) {
+          order: 2;
+          border-top-color: $Orange;
+        }
+        &:nth-child(4) {
+          order: 1;
+          border-top-color: $Blue;
+        }
         .content {
           h4 {
+            color: $Grey-500;
           }
           p {
+            font-size: 12px;
+            color: $Grey-400;
+            margin: 0.5rem 0;
           }
         }
         .img-container {
+          display: flex;
+          justify-content: flex-end;
+          margin: 0.8rem 0;
           img {
+            width: 45px;
           }
         }
       }
