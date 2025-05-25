@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+$Red-400: hsl(7, 99%, 70%);
+$Yellow-500: hsl(51, 100%, 49%);
+$Green-800: hsl(167, 40%, 24%);
+$Blue-800: hsl(198, 62%, 26%);
+$Green-500: hsl(167, 34%, 41%);
+$Grey-950: hsl(212, 27%, 19%);
+$Grey-600: hsl(213, 9%, 39%);
+$Grey-550: hsl(232, 10%, 55%);
+$Grey-400: hsl(210, 4%, 67%);
+$White: hsl(0, 100%, 100%);
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: contain;
+  background-position: center;
+  .arrow{
+    width: 50px;
+    height: 60px;
+    object-fit: contain;
+  }
+  h1{
+    letter-spacing: 6px;
+  }
+  .content{
+    transform: translateY(6rem);
+  }
+}
