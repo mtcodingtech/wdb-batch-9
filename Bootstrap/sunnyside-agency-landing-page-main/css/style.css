@@ -11,19 +11,29 @@ h3,
 h4,
 h5,
 h6,
-button {
+button,
+a {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  color: hsl(212, 27%, 19%);
   font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 .hero-section {
-  min-height: 100vh;
-  background-image: url("../images/desktop/image-header.jpg");
+  min-height: 80vh;
+  background-image: url("../images/mobile/image-header.jpg");
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .hero-section {
+    background-image: url("../images/desktop/image-header.jpg");
+    min-height: 100vh;
+    background-repeat: repeat;
+  }
 }
 .hero-section .arrow {
   width: 50px;
@@ -36,4 +46,19 @@ button {
 }
 .hero-section .content {
   transform: translateY(6rem);
+}
+
+.service-section .transform-container,
+.service-section .stand-out-container {
+  max-width: 350px;
+}
+.service-section .transform-container p,
+.service-section .stand-out-container p {
+  font-size: 12px;
+  color: hsl(232, 10%, 55%);
+  margin: 1rem 0;
+}
+.service-section .transform-container a,
+.service-section .stand-out-container a {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
