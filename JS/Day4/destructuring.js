@@ -10,7 +10,7 @@
 
 // ****************************
 
-const user = { name: "Alice", age: 25 };
+const user = { username: "Alice", age: 25 };
 
-const { name, age } = user;
-console.log(name, age)
+const { username, age } = user;
+console.log(username, age);
